@@ -29,6 +29,11 @@ demo展示了圆角图片的解决方案，都知道圆角用`view.layer.cornerR
 
 这个需要根据项目权衡 -- 
 
+### DispatchQueue 
+
+`DispatchQueue` 日常用法 👉 ： [DispatchQueue](https://github.com/smalldu/Intermediate-swift-study/blob/master/Notes/DispatchQueue.md)  (在Notes文件夹)
+
+
 
 
 
