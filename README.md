@@ -33,6 +33,75 @@ demo展示了圆角图片的解决方案，都知道圆角用`view.layer.cornerR
 
 `DispatchQueue` 日常用法 👉 ： [DispatchQueue](https://github.com/smalldu/Intermediate-swift-study/blob/master/Notes/DispatchQueue.md)  (在Notes文件夹)
 
+### UIButton 图片居左、居右、居下、居上
+
+利用`UIButton`的两个属性 `titleEdgeInsets` 和 `imageEdgeInsets` 写一个分类即可 
+
+代码很简单 ： 
+```
+enum ButtonEdgeStyle {
+  case top  // image 上 label 下
+  case left // image 左 label 右
+  case bottom // image 下 label 上
+  case right // image 右 label 左
+}
+
+extension UIButton {
+  
+  /// button 内布局样式
+  ///
+  /// - Parameters:
+  ///   - style: 样式
+  ///   - space: 间隔
+  func layoutWith( style:ButtonEdgeStyle , space:CGFloat ) {
+    guard let image = self.imageView?.image , let _ = self.titleLabel else {
+      return
+    }
+    let imageSize = image.size
+    let labelWidth: CGFloat = self.titleLabel?.intrinsicContentSize.width ?? 0
+    let labelHeight: CGFloat = self.titleLabel?.intrinsicContentSize.height ?? 0
+    
+    var imageEdgeInsets = UIEdgeInsets.zero
+    var labelEdgeInsets = UIEdgeInsets.zero
+    
+    switch style {
+    case .top:
+      imageEdgeInsets = UIEdgeInsets(top: -labelHeight-space/2, left: 0, bottom: 0, right: -labelWidth)
+      labelEdgeInsets = UIEdgeInsets(top: 0, left: -imageSize.width, bottom: -imageSize.height-space/2, right: 0)
+    case .left:
+      imageEdgeInsets = UIEdgeInsets(top: 0, left: -space/2, bottom: 0, right: space/2)
+      labelEdgeInsets = UIEdgeInsets(top: 0, left: space/2, bottom:0, right: -space/2)
+    case .bottom:
+      imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: -labelHeight-space/2.0 , right: -labelWidth)
+      labelEdgeInsets = UIEdgeInsets(top: -imageSize.height-space/2, left: -imageSize.width, bottom: 0, right: 0)
+    case .right:
+      imageEdgeInsets = UIEdgeInsets(top: 0, left: labelWidth+space/2, bottom: 0, right: -labelWidth-space/2)
+      labelEdgeInsets = UIEdgeInsets(top: 0, left: -imageSize.width-space/2, bottom:0, right: imageSize.width+space/2)
+    }
+    self.titleEdgeInsets = labelEdgeInsets
+    self.imageEdgeInsets = imageEdgeInsets
+  }
+}
+```
+
+使用起来更简单 
+```
+btn1.layoutWith(style: .top , space: 10)
+btn2.layoutWith(style: .left , space: 10)
+btn3.layoutWith(style: .bottom , space: 10)
+btn4.layoutWith(style: .right , space: 10)
+```
+
+
+效果 ：
+![效果](https://github.com/smalldu/Intermediate-swift-study/blob/master/Resources/btmDemo.jpeg)
+
+
+*** 
+
+
+
+
 
 
 
