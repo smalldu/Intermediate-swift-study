@@ -67,9 +67,19 @@ pod repo push #your_repo_name# #your_project_name#.podspec --verbose --allow-war
  pod spec lint --allow-warnings
 ```
 
+在需要引入的地方 指定source
+
+```
+source 'https://github.com/yourname/Specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+```
+
 参考 ： 
 
 https://guides.cocoapods.org/making/private-cocoapods.html
+https://guides.cocoapods.org/syntax/podfile.html#source
+
+
 
 
 ***
