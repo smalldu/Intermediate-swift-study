@@ -61,6 +61,17 @@ pod spec lint --verbose  --allow-warnings
 pod repo push #your_repo_name# #your_project_name#.podspec --verbose --allow-warnings
 ```
 
+最后
+
+```ruby
+ pod spec lint --allow-warnings
+```
+
+参考 ： 
+
+https://guides.cocoapods.org/making/private-cocoapods.html
+
+
 ***
 over 
 
