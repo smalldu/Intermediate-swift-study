@@ -2,6 +2,10 @@
 
 >学习swift过程中总结的一些技巧（demo项目）汇总 
 
+## Notes : 
+
+- `DispatchQueue` 日常用法 👉 ： [DispatchQueue](https://github.com/smalldu/Intermediate-swift-study/blob/master/Notes/DispatchQueue.md) 
+- `cocoaPods` 创建私有库与坑 [连接](https://github.com/smalldu/Intermediate-swift-study/blob/master/Notes/CocoaPods%E5%88%9B%E5%BB%BA%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93.md)
 
 ### PresentKit 
 
@@ -28,10 +32,6 @@ demo展示了圆角图片的解决方案，都知道圆角用`view.layer.cornerR
 写在后台线程会导致延迟显示，尤其是复用cell的tableview 。 滑动的时候不卡顿了，但图片显示稍微推迟了
 
 这个需要根据项目权衡 -- 
-
-### DispatchQueue 
-
-`DispatchQueue` 日常用法 👉 ： [DispatchQueue](https://github.com/smalldu/Intermediate-swift-study/blob/master/Notes/DispatchQueue.md)  (在Notes文件夹)
 
 ### UIButton 图片居左、居右、居下、居上
 
