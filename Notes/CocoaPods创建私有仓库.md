@@ -49,16 +49,38 @@ tag 需要和 s.version 相同。
 提交tag 
 
 执行下面语句验证 
-```
+
+```ruby
 pod spec lint --verbose  --allow-warnings
 ```
 
+这块有巨坑  ， 如果你有项目依赖自己的私有库，这里需要指定source
+
+```ruby
+pod spec lint --sources='私有仓库repo地址,https://github.com/CocoaPods/Specs'
+```
+
+
 根据提示修改 
+
+## 引用自己或第三方的framework或.a文件时
+
+```
+s.ios.vendored_frameworks = "xxx/**/*.framework"
+s.ios.vendored_libraries = "xxx/**/*.a”
+```
+
 
 ## 提交项目到私有repo
 
 ```ruby
 pod repo push #your_repo_name# #your_project_name#.podspec --verbose --allow-warnings
+```
+
+如果你有项目依赖自己的私有库，这里需要指定source
+
+```ruby
+pod repo push 本地repo名 podspec名 --sources='私有仓库repo地址,https://github.com/CocoaPods/Specs'
 ```
 
 最后
@@ -74,11 +96,12 @@ source 'https://github.com/yourname/Specs.git'
 source 'https://github.com/CocoaPods/Specs.git'
 ```
 
+
 参考 ： 
 
 https://guides.cocoapods.org/making/private-cocoapods.html
 https://guides.cocoapods.org/syntax/podfile.html#source
-
+http://www.jianshu.com/p/1e5927eeb341
 
 
 
