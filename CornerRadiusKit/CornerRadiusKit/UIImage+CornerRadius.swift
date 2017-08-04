@@ -31,7 +31,7 @@ extension UIImage {
   func roundImageByCornerRadius(_ radius:CGFloat , resizeToSqure:Bool = true , inSize:CGSize = .zero , borderWidth:CGFloat = 0,borderColor:UIColor = UIColor.black ) -> UIImage?{
     var size = self.size
     var img = self
-    if resizeToSqure {
+    if resizeToSqure && size.width != size.height{
       // 如果需要把图形改成正方形
       var needResize = false
       if size.width > size.height {
