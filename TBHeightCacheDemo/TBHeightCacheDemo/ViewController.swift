@@ -7,44 +7,6 @@
 //
 
 import UIKit
-class ReuseEntity: ExpressibleByStringLiteral{
-  
-  var cell:UITableViewCell?
-  var id : String
-  init(id: String) {
-    self.id = id
-  }
-  
-  required init(stringLiteral value: String) {
-    self.id = value
-  }
-  required convenience init(unicodeScalarLiteral value: String) {
-    self.init(stringLiteral: value)
-  }
-  required convenience init(extendedGraphemeClusterLiteral value: String) {
-    self.init(stringLiteral: value)
-  }
-}
-class CacheTableView: UITableView {
-  
-  var reuse_entitys:[ReuseEntity] = []
-  
-  private func register(){
-    for item in reuse_entitys {
-      if item.cell == nil {
-        item.cell = self.dequeueReusableCell(withIdentifier: item.id)
-      }
-    }
-  }
-  
-//  func heighFor( reuse_id: String , indexPath:IndexPath , callEntity: )
-  
-  
-  
-  
-}
-
-
 
 
 
@@ -56,8 +18,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 
   
   
-  @IBOutlet weak var tbaleView: UITableView!
-  
+  @IBOutlet weak var tbaleView: CacheTableView!
+  fileprivate var rightBar: UIBarButtonItem!
   private var tmpCell:CCell?
   private var cacheDictionary:[IndexPath:CGFloat] = [:]
   
@@ -74,9 +36,14 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     super.viewDidLoad()
     tbaleView.rowHeight = UITableViewAutomaticDimension
     tbaleView.estimatedRowHeight = 100
-    
+    rightBar = UIBarButtonItem(title: "delete", style: .plain, target: self, action: #selector(del))
+    self.navigationItem.rightBarButtonItem = rightBar
   }
-
+  func del(){
+    items.removeFirst()
+    let indexPath = IndexPath(row: 0, section: 0)
+    self.tbaleView.deleteRows(at: [indexPath], with: .fade)
+  }
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
@@ -96,32 +63,39 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
   
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     print(indexPath.row)
-    if tmpCell == nil {
-      tmpCell = tableView.dequeueReusableCell(withIdentifier: "cell") as? CCell
+    return tbaleView.heighFor(reuse_id: "cell", indexPath: indexPath) { (cell) in
+      if let cell = cell as? CCell {
+        cell.lb.text = items[indexPath.row]
+      }
     }
-    tmpCell?.prepareForReuse()
-    tmpCell?.lb.text = items[indexPath.row]
-    //手动添加一个约束 确保动态内容 如label
-    let tempWidthConstraint = NSLayoutConstraint(item: tmpCell!.contentView,
-                                                 attribute: .width,
-                                                 relatedBy: .equal,
-                                                 toItem: nil,
-                                                 attribute: .notAnAttribute,
-                                                 multiplier: 1.0,
-                                                 constant: tableView.frame.width)
-    tmpCell!.contentView.addConstraint(tempWidthConstraint)
-    tmpCell?.lb.text = "\(items[indexPath.row])"
-    let size = tmpCell?.contentView.systemLayoutSizeFitting(UILayoutFittingExpandedSize)
-//    print(size?.height)
-    // 移除约束
-    tmpCell!.contentView.removeConstraint(tempWidthConstraint)
     
-    
-    return (size?.height ?? 0)+1
+//    if tmpCell == nil {
+//      tmpCell = tableView.dequeueReusableCell(withIdentifier: "cell") as? CCell
+//    }
+//    tmpCell?.prepareForReuse()
+//    tmpCell?.lb.text = items[indexPath.row]
+//    //手动添加一个约束 确保动态内容 如label
+//    let tempWidthConstraint = NSLayoutConstraint(item: tmpCell!.contentView,
+//                                                 attribute: .width,
+//                                                 relatedBy: .equal,
+//                                                 toItem: nil,
+//                                                 attribute: .notAnAttribute,
+//                                                 multiplier: 1.0,
+//                                                 constant: tableView.frame.width)
+//    tmpCell!.contentView.addConstraint(tempWidthConstraint)
+////    tmpCell?.lb.text = "\(items[indexPath.row])"
+//    let size = tmpCell?.contentView.systemLayoutSizeFitting(UILayoutFittingExpandedSize)
+////    print(size?.height)
+//    // 移除约束
+//    tmpCell!.contentView.removeConstraint(tempWidthConstraint)
+//    
+//    
+//    return (size?.height ?? 0)+1
     
 //    return UITableViewAutomaticDimension
     
   }
+  
   
 
   

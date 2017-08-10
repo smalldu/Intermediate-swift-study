@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20146B4C1F259A2300517B96 /* CacheTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20146B4B1F259A2300517B96 /* CacheTableView.swift */; };
 		C49A82BD1F24DB84003F8939 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49A82BC1F24DB84003F8939 /* AppDelegate.swift */; };
 		C49A82BF1F24DB84003F8939 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49A82BE1F24DB84003F8939 /* ViewController.swift */; };
 		C49A82C21F24DB85003F8939 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C49A82C01F24DB84003F8939 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20146B4B1F259A2300517B96 /* CacheTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheTableView.swift; sourceTree = "<group>"; };
 		C49A82B91F24DB84003F8939 /* TBHeightCacheDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBHeightCacheDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C49A82BC1F24DB84003F8939 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C49A82BE1F24DB84003F8939 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				C49A82C51F24DB85003F8939 /* LaunchScreen.storyboard */,
 				C49A82C81F24DB85003F8939 /* Info.plist */,
 				C49A82EA1F24DCC5003F8939 /* CCell.swift */,
+				20146B4B1F259A2300517B96 /* CacheTableView.swift */,
 			);
 			path = TBHeightCacheDemo;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			files = (
 				C49A82BF1F24DB84003F8939 /* ViewController.swift in Sources */,
 				C49A82BD1F24DB84003F8939 /* AppDelegate.swift in Sources */,
+				20146B4C1F259A2300517B96 /* CacheTableView.swift in Sources */,
 				C49A82EB1F24DCC5003F8939 /* CCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +524,7 @@
 				C49A82E31F24DB85003F8939 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C49A82E41F24DB85003F8939 /* Build configuration list for PBXNativeTarget "TBHeightCacheDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +533,7 @@
 				C49A82E61F24DB85003F8939 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C49A82E71F24DB85003F8939 /* Build configuration list for PBXNativeTarget "TBHeightCacheDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +542,7 @@
 				C49A82E91F24DB85003F8939 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		204E5F8E1F3C4A5800403C3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204E5F8D1F3C4A5800403C3C /* AppDelegate.swift */; };
+		204E5F901F3C4A5800403C3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204E5F8F1F3C4A5800403C3C /* ViewController.swift */; };
+		204E5F931F3C4A5800403C3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 204E5F911F3C4A5800403C3C /* Main.storyboard */; };
+		204E5F951F3C4A5800403C3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 204E5F941F3C4A5800403C3C /* Assets.xcassets */; };
+		204E5F981F3C4A5800403C3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 204E5F961F3C4A5800403C3C /* LaunchScreen.storyboard */; };
+		204E5FA31F3C4A5800403C3C /* iconfont_studyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204E5FA21F3C4A5800403C3C /* iconfont_studyTests.swift */; };
+		204E5FAE1F3C4A5800403C3C /* iconfont_studyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204E5FAD1F3C4A5800403C3C /* iconfont_studyUITests.swift */; };
+		204E5FBC1F3C4C6D00403C3C /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 204E5FBB1F3C4C6D00403C3C /* iconfont.ttf */; };
+		204E5FC01F3C583B00403C3C /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204E5FBF1F3C583B00403C3C /* TipViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		204E5F9F1F3C4A5800403C3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 204E5F821F3C4A5800403C3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 204E5F891F3C4A5800403C3C;
+			remoteInfo = "iconfont-study";
+		};
+		204E5FAA1F3C4A5800403C3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 204E5F821F3C4A5800403C3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 204E5F891F3C4A5800403C3C;
+			remoteInfo = "iconfont-study";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		204E5F8A1F3C4A5800403C3C /* iconfont-study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iconfont-study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		204E5F8D1F3C4A5800403C3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		204E5F8F1F3C4A5800403C3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		204E5F921F3C4A5800403C3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		204E5F941F3C4A5800403C3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		204E5F971F3C4A5800403C3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		204E5F991F3C4A5800403C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		204E5F9E1F3C4A5800403C3C /* iconfont-studyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iconfont-studyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		204E5FA21F3C4A5800403C3C /* iconfont_studyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iconfont_studyTests.swift; sourceTree = "<group>"; };
+		204E5FA41F3C4A5800403C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		204E5FA91F3C4A5800403C3C /* iconfont-studyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iconfont-studyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		204E5FAD1F3C4A5800403C3C /* iconfont_studyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iconfont_studyUITests.swift; sourceTree = "<group>"; };
+		204E5FAF1F3C4A5800403C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		204E5FBB1F3C4C6D00403C3C /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
+		204E5FBF1F3C583B00403C3C /* TipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		204E5F871F3C4A5800403C3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		204E5F9B1F3C4A5800403C3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		204E5FA61F3C4A5800403C3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		204E5F811F3C4A5800403C3C = {
+			isa = PBXGroup;
+			children = (
+				204E5F8C1F3C4A5800403C3C /* iconfont-study */,
+				204E5FA11F3C4A5800403C3C /* iconfont-studyTests */,
+				204E5FAC1F3C4A5800403C3C /* iconfont-studyUITests */,
+				204E5F8B1F3C4A5800403C3C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		204E5F8B1F3C4A5800403C3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				204E5F8A1F3C4A5800403C3C /* iconfont-study.app */,
+				204E5F9E1F3C4A5800403C3C /* iconfont-studyTests.xctest */,
+				204E5FA91F3C4A5800403C3C /* iconfont-studyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		204E5F8C1F3C4A5800403C3C /* iconfont-study */ = {
+			isa = PBXGroup;
+			children = (
+				204E5FBB1F3C4C6D00403C3C /* iconfont.ttf */,
+				204E5F8D1F3C4A5800403C3C /* AppDelegate.swift */,
+				204E5F8F1F3C4A5800403C3C /* ViewController.swift */,
+				204E5F911F3C4A5800403C3C /* Main.storyboard */,
+				204E5F941F3C4A5800403C3C /* Assets.xcassets */,
+				204E5F961F3C4A5800403C3C /* LaunchScreen.storyboard */,
+				204E5F991F3C4A5800403C3C /* Info.plist */,
+				204E5FBF1F3C583B00403C3C /* TipViewController.swift */,
+			);
+			path = "iconfont-study";
+			sourceTree = "<group>";
+		};
+		204E5FA11F3C4A5800403C3C /* iconfont-studyTests */ = {
+			isa = PBXGroup;
+			children = (
+				204E5FA21F3C4A5800403C3C /* iconfont_studyTests.swift */,
+				204E5FA41F3C4A5800403C3C /* Info.plist */,
+			);
+			path = "iconfont-studyTests";
+			sourceTree = "<group>";
+		};
+		204E5FAC1F3C4A5800403C3C /* iconfont-studyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				204E5FAD1F3C4A5800403C3C /* iconfont_studyUITests.swift */,
+				204E5FAF1F3C4A5800403C3C /* Info.plist */,
+			);
+			path = "iconfont-studyUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		204E5F891F3C4A5800403C3C /* iconfont-study */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 204E5FB21F3C4A5800403C3C /* Build configuration list for PBXNativeTarget "iconfont-study" */;
+			buildPhases = (
+				204E5F861F3C4A5800403C3C /* Sources */,
+				204E5F871F3C4A5800403C3C /* Frameworks */,
+				204E5F881F3C4A5800403C3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iconfont-study";
+			productName = "iconfont-study";
+			productReference = 204E5F8A1F3C4A5800403C3C /* iconfont-study.app */;
+			productType = "com.apple.product-type.application";
+		};
+		204E5F9D1F3C4A5800403C3C /* iconfont-studyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 204E5FB51F3C4A5800403C3C /* Build configuration list for PBXNativeTarget "iconfont-studyTests" */;
+			buildPhases = (
+				204E5F9A1F3C4A5800403C3C /* Sources */,
+				204E5F9B1F3C4A5800403C3C /* Frameworks */,
+				204E5F9C1F3C4A5800403C3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				204E5FA01F3C4A5800403C3C /* PBXTargetDependency */,
+			);
+			name = "iconfont-studyTests";
+			productName = "iconfont-studyTests";
+			productReference = 204E5F9E1F3C4A5800403C3C /* iconfont-studyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		204E5FA81F3C4A5800403C3C /* iconfont-studyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 204E5FB81F3C4A5800403C3C /* Build configuration list for PBXNativeTarget "iconfont-studyUITests" */;
+			buildPhases = (
+				204E5FA51F3C4A5800403C3C /* Sources */,
+				204E5FA61F3C4A5800403C3C /* Frameworks */,
+				204E5FA71F3C4A5800403C3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				204E5FAB1F3C4A5800403C3C /* PBXTargetDependency */,
+			);
+			name = "iconfont-studyUITests";
+			productName = "iconfont-studyUITests";
+			productReference = 204E5FA91F3C4A5800403C3C /* iconfont-studyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		204E5F821F3C4A5800403C3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = duzhe;
+				TargetAttributes = {
+					204E5F891F3C4A5800403C3C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = KY748RT68A;
+						ProvisioningStyle = Automatic;
+					};
+					204E5F9D1F3C4A5800403C3C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = KY748RT68A;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 204E5F891F3C4A5800403C3C;
+					};
+					204E5FA81F3C4A5800403C3C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = KY748RT68A;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 204E5F891F3C4A5800403C3C;
+					};
+				};
+			};
+			buildConfigurationList = 204E5F851F3C4A5800403C3C /* Build configuration list for PBXProject "iconfont-study" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 204E5F811F3C4A5800403C3C;
+			productRefGroup = 204E5F8B1F3C4A5800403C3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				204E5F891F3C4A5800403C3C /* iconfont-study */,
+				204E5F9D1F3C4A5800403C3C /* iconfont-studyTests */,
+				204E5FA81F3C4A5800403C3C /* iconfont-studyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		204E5F881F3C4A5800403C3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				204E5FBC1F3C4C6D00403C3C /* iconfont.ttf in Resources */,
+				204E5F981F3C4A5800403C3C /* LaunchScreen.storyboard in Resources */,
+				204E5F951F3C4A5800403C3C /* Assets.xcassets in Resources */,
+				204E5F931F3C4A5800403C3C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		204E5F9C1F3C4A5800403C3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		204E5FA71F3C4A5800403C3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		204E5F861F3C4A5800403C3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				204E5F901F3C4A5800403C3C /* ViewController.swift in Sources */,
+				204E5FC01F3C583B00403C3C /* TipViewController.swift in Sources */,
+				204E5F8E1F3C4A5800403C3C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		204E5F9A1F3C4A5800403C3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				204E5FA31F3C4A5800403C3C /* iconfont_studyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		204E5FA51F3C4A5800403C3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				204E5FAE1F3C4A5800403C3C /* iconfont_studyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		204E5FA01F3C4A5800403C3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 204E5F891F3C4A5800403C3C /* iconfont-study */;
+			targetProxy = 204E5F9F1F3C4A5800403C3C /* PBXContainerItemProxy */;
+		};
+		204E5FAB1F3C4A5800403C3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 204E5F891F3C4A5800403C3C /* iconfont-study */;
+			targetProxy = 204E5FAA1F3C4A5800403C3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		204E5F911F3C4A5800403C3C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				204E5F921F3C4A5800403C3C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		204E5F961F3C4A5800403C3C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				204E5F971F3C4A5800403C3C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		204E5FB01F3C4A5800403C3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		204E5FB11F3C4A5800403C3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		204E5FB31F3C4A5800403C3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KY748RT68A;
+				INFOPLIST_FILE = "iconfont-study/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "im.zuber.app.iconfont-study";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		204E5FB41F3C4A5800403C3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KY748RT68A;
+				INFOPLIST_FILE = "iconfont-study/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "im.zuber.app.iconfont-study";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		204E5FB61F3C4A5800403C3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = KY748RT68A;
+				INFOPLIST_FILE = "iconfont-studyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "im.zuber.app.iconfont-studyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iconfont-study.app/iconfont-study";
+			};
+			name = Debug;
+		};
+		204E5FB71F3C4A5800403C3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = KY748RT68A;
+				INFOPLIST_FILE = "iconfont-studyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "im.zuber.app.iconfont-studyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iconfont-study.app/iconfont-study";
+			};
+			name = Release;
+		};
+		204E5FB91F3C4A5800403C3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = KY748RT68A;
+				INFOPLIST_FILE = "iconfont-studyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "im.zuber.app.iconfont-studyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "iconfont-study";
+			};
+			name = Debug;
+		};
+		204E5FBA1F3C4A5800403C3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = KY748RT68A;
+				INFOPLIST_FILE = "iconfont-studyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "im.zuber.app.iconfont-studyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "iconfont-study";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		204E5F851F3C4A5800403C3C /* Build configuration list for PBXProject "iconfont-study" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				204E5FB01F3C4A5800403C3C /* Debug */,
+				204E5FB11F3C4A5800403C3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		204E5FB21F3C4A5800403C3C /* Build configuration list for PBXNativeTarget "iconfont-study" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				204E5FB31F3C4A5800403C3C /* Debug */,
+				204E5FB41F3C4A5800403C3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		204E5FB51F3C4A5800403C3C /* Build configuration list for PBXNativeTarget "iconfont-studyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				204E5FB61F3C4A5800403C3C /* Debug */,
+				204E5FB71F3C4A5800403C3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		204E5FB81F3C4A5800403C3C /* Build configuration list for PBXNativeTarget "iconfont-studyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				204E5FB91F3C4A5800403C3C /* Debug */,
+				204E5FBA1F3C4A5800403C3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 204E5F821F3C4A5800403C3C /* Project object */;
+}
