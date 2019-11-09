@@ -1,6 +1,6 @@
 #### GCD - DispatchQueue 
 
-> 以前的GCD是基于C的API ， swift3 苹果基于GCD封装了一层，我们可以以更swifty的方式来使用GCD
+> 以前的GCD是基于C的API ， swift3 以后苹果基于GCD封装了一层，我们可以以更swifty的方式来使用GCD
 
 几个概念：
 
